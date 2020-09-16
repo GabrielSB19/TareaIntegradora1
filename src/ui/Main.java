@@ -214,7 +214,8 @@ public class Main{
     for (int i = 0; i<numMaterials; i++){
       System.out.println("El mejor lugar para comprar el producto "+ nameMaterials[i] +" es en "+ bestPlace[i] +" con un precio de "+ bestValue[i]);
     }
-    System.out.println("Si realizas estas compras pagaras "+ Operations.bestPay(numMaterials, bestPrice, location));
+    System.out.println("Si realizas estas compras pagaras incluido el domicilio "+ (Operations.bestPay(numMaterials, bestPrice, location)-4880000));
+    System.out.println("El valor total a pagar incluido la mano de obra es de "+Operations.bestPay(numMaterials, bestPrice, location));
   }
 
   /**

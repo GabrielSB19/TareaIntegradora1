@@ -288,7 +288,7 @@ public class Operations{
 				pricePay = pricePay;
 			}
 		}
-    pricePay = pricePay;
+    pricePay = pricePay+DARK_WORK+WHITE_WORK+PAINT;
     return pricePay;
   }
 
