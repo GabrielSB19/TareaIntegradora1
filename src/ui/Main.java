@@ -210,6 +210,7 @@ public class Main{
   public static void showBestProduct (int numMaterials, int [] priceFerreteriaBarrio, int [] priceFerreteriaCentro, int [] priceHomecenter, int [] amountMaterials, int [] bestPrice, String [] nameMaterials, String location){
     String [] bestPlace = Operations.metBestPlace(numMaterials, priceFerreteriaBarrio, priceFerreteriaCentro, priceHomecenter, amountMaterials);
     int [] bestValue = Operations.metBestPrice(numMaterials, priceFerreteriaBarrio, priceFerreteriaCentro, priceHomecenter, amountMaterials);
+    //*Note: I created a variable to give value to the Operations.<Name> because at the time of showing in the system.out.println I got strange letters and numbers.
     for (int i = 0; i<numMaterials; i++){
       System.out.println("El mejor lugar para comprar el producto "+ nameMaterials[i] +" es en "+ bestPlace[i] +" con un precio de "+ bestValue[i]);
     }
