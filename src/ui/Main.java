@@ -16,7 +16,7 @@ public class Main{
   @return location
   */
   public static String registerLocation(Scanner sc){
-    System.out.println ("Ingresa la ubicacion del inmueble donde se realizara la obra");
+    System.out.println ("\nIngresa la ubicacion del inmueble donde se realizara la obra");
     String location = sc.nextLine();
     boolean correctLoc = false;
     while (correctLoc == false){
